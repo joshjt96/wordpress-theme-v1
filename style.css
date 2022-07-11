@@ -7,3 +7,717 @@ Tags: toms-art-site, responsive
 Author: Josh Talley
 Author URI: https://github.com/joshjt96
 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: white;
+    background-color: white;
+    overflow-x: hidden;
+    /* border: 1px solid red; */
+}
+
+/* Navbar */
+
+header {
+    background-color: #041d32;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 20vw;
+    margin-top: 15px;
+    margin-left: 4%;
+    margin-right: 4%;
+    align-items: center;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: white;
+}
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* Contact page - no form */
+.contact-left-main {
+    width: 100%;
+    height: 600px;
+    margin-top: 2rem;
+    background: url(images/) no-repeat center / cover;
+}
+
+.left-contact {
+    width: 100%;
+    height: 450px;
+    margin: 1rem;
+    background: url(images/boat.jpg) no-repeat center / cover;
+    box-shadow: 0px 0px 10px black;
+}
+
+.contact-container {
+    margin: 10px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    background-color: #041d32;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 20px 50px 50px 50px;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+.contact-art-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-artwork-img {
+    width: 375px;
+    height: 260px;
+    margin: 15px;
+    box-shadow: 0px 0px 7px black;
+}
+
+/* Form */
+.contact-box {
+    margin: 10%;
+	max-width: 60vw;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.form-box {
+	padding: 25px 40px;
+}
+
+h2 {
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+    color: #041d32;
+}
+
+.field {
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 0;
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	transition: .3s;
+    text-align: center;
+}
+
+.field:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+	min-height: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-btn {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #041d32;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.form-btn:hover {
+    background-color: #647481;
+}
+
+.field:focus {
+    border: 2px solid #041d32;
+    background-color: #fff;
+}
+
+/* Main Header */
+
+section {
+    min-height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.main-banner-container {
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-main {
+    width: 100%;
+    height: 570px;
+    background: url(images/trees.jpg) no-repeat center / cover;
+    box-shadow: 0px 0px 10px black;
+}
+
+.right-main {
+    width: 50%;
+    min-height: 200px;
+    background-color: #041d329d;
+    display: flex;
+    padding: 30px;
+    margin-left: 75px;
+    margin-top: 4rem;
+}
+
+.main-banner-text {
+    text-align: center;
+}
+
+.right-main h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-shadow: 1px 1px #041d32;
+}
+
+.right-main p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-shadow: 1px 1px #041d32;
+}
+
+.right-main a {
+    text-decoration: none;
+    background-color: white;
+    color: #041d32;
+    padding: 20px 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.fab {padding: 0 2% 2%;}
+
+/* Split content blue */
+.blue-split {
+    background-color: #041d32;
+}
+
+.split-container {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #041d32;
+}
+
+.split-left {
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    padding: 30px;
+    margin-left: 25px;
+    margin-top: 4rem;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    z-index: 1;
+    text-align: center;
+}
+
+.split-left h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-shadow: 1px 1px #041d32;
+}
+
+.split-left p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-shadow: 1px 1px #041d32;
+}
+
+.split-left a {
+    text-decoration: none;
+    background-color: white;
+    color: #041d32;
+    padding: 20px 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.split-right {
+    width: 60%;
+    height: 450px;
+    margin: 1rem;
+    background: url(images/driftwood.jpg) no-repeat center / cover;
+    border: 5px solid wheat;
+}
+
+/* Split content white */
+
+.split-white-container {
+    width: 100%;
+    margin: 25px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-white {
+    width: 100%;
+    height: 450px;
+    margin: 1rem;
+    background: url(images/needham-cedars.jpg) no-repeat center / cover;
+    box-shadow: 0px 0px 10px black;
+}
+
+.right-white {
+    width: 100%;
+    min-height: 200px;
+    color: #041d32;
+    display: flex;
+    padding: 30px;
+    margin-left: 25px;
+    margin-top: 4rem;
+}
+
+.right-white h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.right-white p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.right-white a {
+    text-decoration: none;
+    background-color: #041d32;
+    color: white;
+    padding: 20px 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.white-banner-text {
+    text-align: center;
+}
+
+.footer-1 {
+    background-color: #041d32;
+    text-align: center;
+}
+
+
+.footer-logo-menu {
+    display: flex;
+}
+
+.footer-logo {
+   margin-left: 100px;
+   width: 30vw;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-left: 600px;
+}
+
+.footer-item {
+    height: 1rem;
+    width: 20vw;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contact {
+    text-decoration: none;
+    background-color: white;
+    color: #041d32;
+    padding: 20px 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.btn-contact:hover {
+    background-color: #647481;
+    color: white;
+}
+
+.btn-main:hover {
+    background-color: #041d32;
+    color: white;
+}
+
+.btn-white:hover {
+    background-color: #647481;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #647481;
+    color: white;
+}
+
+/* About */
+
+.about-left-main {
+    width: 100%;
+    height: 600px;
+    margin-top: 2rem;
+    background: url(images/tombw.jpeg) no-repeat center / cover;
+}
+
+/* Artwork page */
+
+.page-header {
+    color: #041d32;
+    text-align: center;
+    margin: 3%;
+}
+
+.page-header a {
+    text-decoration: none;
+    background-color: #041d32;
+    color: white;
+    padding: 20px 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.artwork-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artwork-img {
+    width: 325px;
+    height: 225px;
+    margin: 15px;
+    box-shadow: 0px 0px 7px black;
+}
+
+/* .artwork-img:hover {
+    width: 375px;
+    height: 275px;
+    margin: 15px;
+    box-shadow: 0px 0px 7px black;
+    transition: width 1s, height 1s;
+} */
+
+.confirmText {
+    text-align: center;
+    color: black;
+}
+
+/* Exhibition page */
+
+.ex-page {
+    color: #041d32;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%
+}
+
+.ex-page a {
+    text-decoration: none;
+    background-color: #041d32;
+    color: white;
+    padding: 20px 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.captcha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width : 1920px) {
+    .mobile-footer {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    section {
+        min-height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: absolute;
+        left: -110%;
+        top: 70px;
+        margin-top: -1px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #041d32;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+        padding-right: 14%;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .contact-box{
+		max-width: 100vw;
+	}
+
+    .main-banner-container {
+        flex-direction: column;
+    }
+
+    .left-main {
+        width: 92%;
+        height: 300px;
+    }
+
+    .right-main {
+        width: 80%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 14%;
+    }
+
+    .split-right {
+        width: 90%;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .split-text {
+        margin-top: -20%;
+        margin-bottom: -20%;
+        margin-right: 15px;
+    }
+
+    .split-white-container {
+        flex-direction: column;
+    }
+
+    .left-white {
+        width: 100%;
+        height: 300px;
+    }
+
+    .right-white {
+        width: 80%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .about-left-main {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-container {
+        display: block;
+        margin: auto;
+        border: 1px solid red;
+    }
+
+    .contact-text {
+        background-color: #041d32;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .contact-art-container {
+        margin: auto;
+    }
+
+    .left-contact {
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer-1 {
+        border: 1px solid red;
+        display: none;
+    }
+
+    .footer-logo {
+        display: flex;
+        margin-left: 50px;   
+    }
+
+    .footer-p {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        background-color: #041d32;
+        height: 15%;
+        margin-top: 30px;
+    }
+
+    .mobile-footer-link a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .mobile-footer-link {
+        display: inline;
+        margin: 12px;
+        
+    }
+
+    .mobile-footer-list {
+        padding-top: 25px;
+    }
+
+    .mobile-footer p {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+}
