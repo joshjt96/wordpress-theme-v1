@@ -1,1 +1,1 @@
-# wordpress-theme-v1
+Custom theme for TC Art
