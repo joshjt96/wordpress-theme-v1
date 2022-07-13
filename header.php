@@ -12,8 +12,23 @@
     <!-- Nav -->
     <header>
         <nav class="navbar">
-            <a href="index.html" class="nav-link hover-underline-animation">Tom Coomber Art</a>
-            <ul class="nav-menu">
+            <?php
+                the_custom_logo();
+            ?>
+            <!-- <a href="index.html" class="nav-link hover-underline-animation">Tom Coomber Art</a> -->
+
+            <?php
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary', 
+                        'container' => '', 
+                        'theme_location' => 'primary',
+                        'items_wrap' => '<ul id="" class="nav-menu">%3$s</ul>'
+                    )
+                );
+            ?>
+
+            <!-- <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="artwork.html" class="nav-link hover-underline-animation">Artwork</a>
                 </li>
@@ -26,7 +41,7 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link hover-underline-animation">Contact</a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
